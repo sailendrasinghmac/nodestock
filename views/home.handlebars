@@ -1,3 +1,28 @@
-<h1>This is my handlebar webpage</h1>
+{{posted_stuff}}<br/>
 
-<p>{{ stuff }}</p>
+
+<div class="jumbotron">
+  <h1 class="display-4">{{ stock.companyName}} ({{ stock.symbol}})</h1>
+  <br/>
+    <strong>Latest Price: </strong>{{ stock.latestPrice}}<br/>
+    <strong>Previous Close:</strong>{{ stock.preciousClose}}<br/>
+    <strong>Percentage Change:</strong>{{ stock.changePercent}}%<br/>
+    <strong>Market Cap:</strong>{{ stock.marketCap}}<br/>
+    <strong>YTD Change:</strong>{{ stock.ytdChange}}%<br/>
+    <strong>52wk High:</strong>{{ stock.week52High}}<br/>
+    <strong>53wk Low</strong>{{ stock.week52Low}}<br/>
+ 
+</div>
+
+
+
+
+
+
+<!--
+<br/><br/>
+{{#each stock}}
+    {{@key}} | {{this}}<br/>
+{{/each}}
+
+-->
